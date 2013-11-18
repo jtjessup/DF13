@@ -1,0 +1,10 @@
+<apex:page standardController="Opportunity" extensions="ChannelOrderController" action="{!createOrderFromOpportunity}">
+   <apex:pagemessages />
+   <apex:form id="theForm">
+     <apex:pageBlock id="pageBlock">
+		 <apex:pageBlockButtons location="bottom">
+		    <apex:commandButton action="{!cancel}" value="Return"/>
+		 </apex:pageBlockButtons>  
+	  </apex:pageBlock>
+	</apex:form>
+</apex:page>

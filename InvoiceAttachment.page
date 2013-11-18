@@ -1,0 +1,6 @@
+<apex:page standardController="Salesforce_Invoice__c">
+	<apex:repeat var="attachment" value="{!Salesforce_Invoice__c.attachments}"> 
+	   <!-- <apex:iframe src="/servlet/servlet.FileDownload?file={!attachment.id}"/> -->
+	   <c:attachment value="{!attachment.id}" width="100%" height="2000"/>
+	</apex:repeat>
+</apex:page>
